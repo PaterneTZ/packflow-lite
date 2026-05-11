@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-violet hover:bg-violet-light text-white rounded-lg transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-dark-secondary hover:bg-dark-tertiary text-white rounded-lg transition-colors duration-200 font-medium border border-dark-tertiary;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 bg-dark-secondary border border-dark-tertiary rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-violet transition-colors duration-200;
+  }
+  
+  .label-text {
+    @apply text-sm font-medium text-gray-300;
+  }
+}
